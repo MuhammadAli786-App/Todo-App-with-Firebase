@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background: linear-gradient(to left, #63AEE5, #854CE7);
+}
+
+
+.container {
+    width: 85%;
+    background-color: white !important;
+    margin: 50px auto;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Login {
+    text-align: center;
+    color: #007ADB;
+}
+
+.Login h1 {
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.loginInputs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 10px;
+
+}
+
+.loginInputs input {
+    outline: none;
+    padding: 10px;
+    margin: 8px 2px;
+    transition: all ease 0.6s;
+    border: solid 2px gray;
+    background-color: lightgray;
+    font-size: 20px;
+    color: rgb(122, 9, 73) !important;
+}
+
+.createAccount {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.createAccount a {
+    font-size: 20px;
+    transition: all ease 0.6s;
+    text-decoration: none;
+}
+
+.createAccount a:hover {
+    text-decoration: underline;
+}
+
+.loginInputs input:focus {
+    border: solid 2px rgb(154, 154, 244);
+    background-color: rgb(202, 202, 248);
+}
+
+.loginInputs label {
+    cursor: pointer;
+    color: #333333;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.loginInputs input:focus::placeholder {
+    color: crimson;
+}
+
+.loginBtn {
+    margin: 8px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.loginBtn button {
+    padding: 8px;
+    background-color: #007ADB;
+    border: solid 1px #007ADB;
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 250px;
+    cursor: pointer;
+    transition: all ease 0.6s;
+    font-weight: 600;
+}
+
+.loginBtn button:hover {
+    width: 400px;
+    background-color: #04416c;
+    border: solid 1px #04416c;
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:530px) and (min-width:320px) {
+    .Login h1 {
+        font-size: 30px;
+    }
+
+    .loginInputs label {
+        font-size: 18px;
+    }
+
+    .loginInputs {
+        margin: 10px 6px;
+        padding: 5px;
+    }
+
+    .loginInputs input {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    .createAccount a {
+        font-size: 18px;
+    }
+
+    .loginBtn button {
+        width: 190px;
+    }
+
+    .loginBtn button:hover {
+        width: 250px;
+    }
+}

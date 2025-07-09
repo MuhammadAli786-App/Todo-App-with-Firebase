@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.user {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.user h1 {
+    color: #5A00A0;
+    font-size: 40px;
+}
+
+body {
+    background: linear-gradient(to right, #4afff0, #e77fe7);
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.todoList {
+    text-align: center;
+}
+
+.todoList h1 {
+    font-size: 38px;
+    color: #1a237e;
+}
+
+.todoList input {
+    width: 90%;
+    transition: all ease 0.6s;
+    padding: 8px;
+    margin: 20px 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 24px;
+    background-color: gainsboro;
+    border: solid 2px lightslategray;
+    color: rgb(12, 9, 106);
+}
+
+.todoList input::placeholder {
+    color: brown;
+}
+
+.todoList input:focus {
+    box-shadow: 0 0 8px 2px rgba(235, 2, 33, 0.6);
+}
+
+.addTodo {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin: 15px 8px;
+    gap: 10px;
+    align-items: center;
+}
+
+.addTodo p {
+    font-weight: 600;
+}
+
+.addBtn {
+    padding: 8px 12px;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease;
+}
+
+.addBtn:hover {
+    background: linear-gradient(to left, #70538e, #df4cf2);
+    scale: 1.1;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.addIcon {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.addPara {
+    font-size: 20px;
+    color: #151b5c;
+}
+
+.deleteBtn {
+    padding: 8px 12px;
+    background: linear-gradient(to right, #ff5900, #ff0000);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease;
+}
+
+.deleteIcon {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.deleteBtn:hover {
+    background: linear-gradient(to left, #f9d245, #aa5d06);
+    scale: 1.1;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.deletePara {
+    color: rgb(173, 19, 19);
+    font-size: 20px;
+}
+
+.TodoItem {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px whitesmoke;
+    width: 85%;
+    margin: 20px auto;
+    align-items: center;
+    padding: 15px 7px;
+    border-radius: 8px;
+    background-color: rgb(21, 18, 18);
+}
+
+.item p {
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.editBtn {
+    margin-right: 20px;
+
+}
+
+.edit {
+    padding: 6px 18px;
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    color: white;
+    font-size: 20px;
+    margin: 2px 5px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+}
+
+.edit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 242, 254, 0.8);
+}
+
+.delete {
+    padding: 6px 18px;
+    background: linear-gradient(to right, #fea500, #b50511);
+    color: white;
+    font-size: 20px;
+    margin: 2px 5px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    box-shadow: 0 0 12px #ff020280;
+}
+
+.delete:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 0, 30, 0.795);
+}
+
+.Btncontainer {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.LogoutBtn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+.LogoutBtn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+.ProfileBtn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+.ProfileBtn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+
+}
+
+@media screen and (max-width:768px) and (min-width:560px) {
+
+    .user h1 {
+        font-size: 34px;
+    }
+
+    .todoList h1 {
+        font-size: 32px;
+    }
+
+    .todoList input {
+        width: 92%;
+        margin: 15px 8px;
+        font-size: 20px;
+    }
+
+    .addBtn {
+        font-size: 17px;
+        padding: 6px 9px;
+    }
+
+    .addIcon {
+        font-size: 22px;
+    }
+
+    .deleteBtn {
+        font-size: 17px;
+        padding: 6px 9px;
+    }
+
+    .deleteIcon {
+        font-size: 22px;
+    }
+
+    .deletePara {
+        font-size: 18px;
+    }
+
+    .addPara {
+        font-size: 18px;
+    }
+
+    .TodoItem {
+        width: 87%;
+        padding: 12px 6px;
+    }
+
+    .item p {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .edit {
+        padding: 5px 12px;
+        font-size: 18px;
+    }
+
+    .delete {
+        padding: 5px 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:559px) and (min-width:425px) {
+
+    .user h1 {
+        font-size: 32px;
+    }
+
+    .todoList h1 {
+        font-size: 30px;
+    }
+
+    .todoList input {
+        width: 94%;
+        margin: 12px 6px;
+        font-size: 18px;
+    }
+
+    .addBtn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .addIcon {
+        font-size: 20px;
+    }
+
+    .deleteBtn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .deleteIcon {
+        font-size: 20px;
+    }
+
+    .deletePara {
+        font-size: 16px;
+    }
+
+    .addPara {
+        font-size: 16px;
+    }
+
+    .TodoItem {
+        width: 89%;
+        padding: 10px 5px;
+    }
+
+    .item p {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    .edit {
+        padding: 4px 10px;
+        font-size: 18px;
+    }
+
+    .delete {
+        padding: 4px 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:424px) and (min-width:300px) {
+
+    .user h1 {
+        font-size: 30px;
+    }
+
+    .todoList h1 {
+        font-size: 28px;
+    }
+
+    .todoList input {
+        width: 96%;
+        margin: 10px 5px;
+        font-size: 16px;
+    }
+
+    .addBtn {
+        font-size: 16px;
+        padding: 4px 6px;
+    }
+
+    .addIcon {
+        font-size: 18px;
+    }
+
+    .deleteBtn {
+        font-size: 16px;
+        padding: 4px 6px;
+    }
+
+    .deleteIcon {
+        font-size: 18px;
+    }
+
+    .deletePara {
+        font-size: 16px;
+    }
+
+    .addPara {
+        font-size: 16px;
+    }
+
+    .TodoItem {
+        width: 91%;
+        padding: 8px 4px;
+    }
+
+    .item p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .edit {
+        padding: 3px 7px;
+        font-size: 16px;
+    }
+
+    .delete {
+        padding: 3px 7px;
+        font-size: 16px;
+    }
+}
