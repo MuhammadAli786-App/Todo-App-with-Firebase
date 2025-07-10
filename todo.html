@@ -35,7 +35,14 @@
       <div class="todoList">
         <h1>Todo List</h1>
 
-        <input type="text" placeholder="Enter Todo..." id="input" />
+        <textarea
+          oninput="autoResize(this)"
+          class="todoInput"
+          type="text"
+          placeholder="Enter Todo..."
+          id="input"
+          rows="1"
+        ></textarea>
       </div>
 
       <div class="addTodo">

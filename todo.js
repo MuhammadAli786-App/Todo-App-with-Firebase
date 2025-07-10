@@ -160,6 +160,13 @@ const userLogout = () => {
 const userProfile = () => {
   window.location.href = "./profile.html";
 };
+function autoResize(textarea) {
+  textarea.style.height = "auto";
+  textarea.style.height = textarea.scrollHeight + "px";
+  console.log("hello todo");
+}
+window.autoResize = autoResize;
+
 ProfileBtn.addEventListener("click", userProfile);
 LogoutBtn.addEventListener("click", userLogout);
 window.addEventListener("load", renderTodos);

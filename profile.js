@@ -77,6 +77,7 @@ const updateUserData = async () => {
 // Call this immediately (not inside DOMContentLoaded)
 onAuthStateChanged(auth, updateProfile);
 
+
 // Set event listeners after DOM loads
 window.addEventListener("DOMContentLoaded", () => {
   ProfileBtn.addEventListener("click", todoApp);
